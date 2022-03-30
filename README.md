@@ -2,6 +2,22 @@ Widget for choosing Day and Time for Android apps with flexible configuration
 
 <image src=screenshot.png />
 
+Add it in your root build.gradle at the end of repositories:
+```groovy
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+Add the dependency
+```groovy
+	dependencies {
+	        implementation 'com.github.wheely:android-day-time-picker:Tag'
+	}
+```
+Sample usage
 ```kotlin
     val dayTimePicker: DayTimePicker = findViewById(R.id.day_time_picker)
     val currentTime = LocalDateTime.of(1993, Month.SEPTEMBER, 3, 21, 21)
