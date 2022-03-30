@@ -20,7 +20,7 @@ Add the dependency
 Sample usage
 ```xml
     <com.wheely.daytimepicker.DayTimePicker
-        android:id="@+id/showcase_day_time_picker"
+        android:id="@+id/day_time_picker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:day_time_picker_is_24h_mode="false"
