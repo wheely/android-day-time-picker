@@ -18,6 +18,14 @@ Add the dependency
 	}
 ```
 Sample usage
+```xml
+    <com.wheely.daytimepicker.DayTimePicker
+        android:id="@+id/showcase_day_time_picker_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:day_time_picker_is_24h_mode="false"
+    />
+```
 ```kotlin
     val dayTimePicker: DayTimePicker = findViewById(R.id.day_time_picker)
     val currentTime = LocalDateTime.of(1993, Month.SEPTEMBER, 3, 21, 21)
