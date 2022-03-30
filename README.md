@@ -2,14 +2,11 @@ Widget for choosing Day and Time for Android apps with flexible configuration
 
 <image src=screenshot.png />
 
-Add it in your root build.gradle at the end of repositories:
+Add repository:
 ```groovy
-	allprojects {
-		repositories {
-			...
+    repositories {
 			maven { url 'https://jitpack.io' }
-		}
-	}
+    }
 ```
 Add the dependency
 ```groovy
