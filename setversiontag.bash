@@ -1,7 +1,7 @@
 #!/bin/bash
-if [[ $(./getversion.bash) ]]; then
+VERSION=$(./getversion.bash)
+if [[ $(git tag | grep $VERSION) ]]; then
     echo "version already exists"
 else
-    git tag -a $(./getversion.bash)
+    git tag -a $VERSION
 fi
-
