@@ -10,9 +10,9 @@ Add repository:
 ```
 Add the dependency
 ```groovy
-	dependencies {
+    dependencies {
         implementation 'com.github.wheely:android-day-time-picker:1.0.1'
-	}
+    }
 ```
 Sample usage
 ```xml
