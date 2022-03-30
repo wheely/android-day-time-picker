@@ -5,13 +5,13 @@ Widget for choosing Day and Time for Android apps with flexible configuration
 Add repository:
 ```groovy
     repositories {
-			maven { url 'https://jitpack.io' }
+        maven { url 'https://jitpack.io' }
     }
 ```
 Add the dependency
 ```groovy
 	dependencies {
-	        implementation 'com.github.wheely:android-day-time-picker:1.0.1'
+        implementation 'com.github.wheely:android-day-time-picker:1.0.1'
 	}
 ```
 Sample usage
