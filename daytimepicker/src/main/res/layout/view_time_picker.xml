@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:parentTag="android.widget.LinearLayout">
+
+    <com.wheely.daytimepicker.ScrollSelector
+        android:id="@+id/time_picker_day"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:scroll_selector_infinite="false"
+        app:scroll_selector_values="@array/today"
+        tools:layout_width="150dp" />
+
+    <com.wheely.daytimepicker.ScrollSelector
+        android:id="@+id/time_picker_hour"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:scroll_selector_values="@array/hours24"
+        tools:layout_width="50dp" />
+
+    <com.wheely.daytimepicker.ScrollSelector
+        android:id="@+id/time_picker_minute"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:scroll_selector_values="@array/minutes"
+        tools:layout_width="50dp" />
+
+    <com.wheely.daytimepicker.ScrollSelector
+        android:id="@+id/time_picker_am_pm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:scroll_selector_infinite="false"
+        app:scroll_selector_values="@array/am_pm"
+        tools:layout_width="50dp" />
+</merge>

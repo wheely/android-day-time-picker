@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DayTimePicker">
+        <item name="android:gravity">center</item>
+        <item name="android:padding">8dp</item>
+        <item name="day_time_picker_center_text_size">16dp</item>
+        <item name="day_time_picker_center_text_style">normal</item>
+        <item name="day_time_picker_day_column_width">150dp</item>
+        <item name="day_time_picker_line_height">27dp</item>
+        <item name="day_time_picker_secondary_text_size">14dp</item>
+        <item name="day_time_picker_secondary_text_style">normal</item>
+    </style>
+</resources>

@@ -1,0 +1,6 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.DayTimePicker" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="day_time_picker_style">@style/DayTimePicker</item>
+    </style>
+</resources>

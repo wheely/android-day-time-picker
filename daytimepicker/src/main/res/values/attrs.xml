@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="day_time_picker_style" format="reference" />
+    <declare-styleable name="ScrollSelector">
+        <attr name="scroll_selector_center_text_size" format="dimension" />
+        <attr name="scroll_selector_secondary_text_size" format="dimension" />
+        <attr name="scroll_selector_line_height" format="dimension" />
+        <attr name="scroll_selector_center_text_color" format="color" />
+        <attr name="scroll_selector_secondary_text_color" format="color" />
+        <attr name="scroll_selector_text_font" format="reference" />
+        <attr name="scroll_selector_values" format="reference" />
+        <attr name="scroll_selector_center_text_style">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+        </attr>
+        <attr name="scroll_selector_secondary_text_style">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+        </attr>
+        <attr name="scroll_selector_infinite" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="DayTimePicker">
+        <attr name="day_time_picker_center_text_size" format="dimension" />
+        <attr name="day_time_picker_secondary_text_size" format="dimension" />
+        <attr name="day_time_picker_line_height" format="dimension" />
+        <attr name="day_time_picker_center_text_color" format="color" />
+        <attr name="day_time_picker_secondary_text_color" format="color" />
+        <attr name="day_time_picker_values" format="reference" />
+        <attr name="day_time_picker_text_font" format="reference" />
+        <attr name="day_time_picker_center_text_style">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+        </attr>
+        <attr name="day_time_picker_secondary_text_style">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+        </attr>
+        <attr name="day_time_picker_day_column_width" format="dimension" />
+        <attr name="day_time_picker_hour_column_width" format="dimension" />
+        <attr name="day_time_picker_am_pm_column_width" format="dimension" />
+        <attr name="day_time_picker_minute_column_width" format="dimension" />
+        <attr name="day_time_picker_override_width" format="dimension" />
+        <attr name="day_time_picker_is_24h_mode" format="boolean" />
+    </declare-styleable>
+</resources>

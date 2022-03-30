@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.wheely.daytimepicker.DayTimePicker
+        android:id="@+id/showcase_day_time_picker_24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/showcase_day_time_picker_24_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        tools:text="3 сентября 00:00" />
+
+    <com.wheely.daytimepicker.DayTimePicker
+        android:id="@+id/showcase_day_time_picker_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:day_time_picker_is_24h_mode="false" />
+
+    <TextView
+        android:id="@+id/showcase_day_time_picker_12_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        tools:text="3 сентября 00:00" />
+
+</LinearLayout>
+
