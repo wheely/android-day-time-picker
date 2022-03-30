@@ -30,12 +30,18 @@ class DayTimePicker constructor(context: Context, attrs: AttributeSet?, defStyle
         private const val DEFAULT_MINUTE_COLUMN_WIDTH_DP = 50
     }
 
+    /**
+     * programmatically sets 24h mode
+     */
     var is24hMode: Boolean = false
         set(value) {
             field = value
             setupHourValues()
         }
 
+    /**
+     * callback function when user selected time
+     */
     var onUserSelected: ((LocalDateTime) -> Unit)? = null
 
     private var startDay: LocalDate =
@@ -176,6 +182,12 @@ class DayTimePicker constructor(context: Context, attrs: AttributeSet?, defStyle
         amPmColumn.visibility = if (is24hMode) GONE else VISIBLE
     }
 
+    /**
+     * @param startTime from this time we can choose not earlier
+     * @param currentTime time chosen by default
+     * @param dayCountDuration determines number of days user can choose
+     * @param dayStringBuilder function that builds a day title string from a LocalDate
+     */
     fun setDateTimeParams(
         startTime: LocalDateTime,
         currentTime: LocalDateTime,
@@ -202,6 +214,9 @@ class DayTimePicker constructor(context: Context, attrs: AttributeSet?, defStyle
         minuteColumn.selectedIndex = currentTime.minute / 5
     }
 
+    /**
+     * @return selected time
+     */
     fun getSelectedTime(): LocalDateTime {
         val minute = minuteColumn.selectedIndex * 5
         var hour = hourColumn.selectedIndex
