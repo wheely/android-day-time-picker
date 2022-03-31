@@ -1,6 +1,6 @@
 Widget for choosing Day and Time for Android apps with flexible configuration 
 
-<image src=screenshot.png />
+<image src=picker-demo.gif />
 
 Add repository:
 ```groovy

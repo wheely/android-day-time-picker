@@ -5,7 +5,7 @@
         <item name="android:padding">8dp</item>
         <item name="day_time_picker_center_text_size">16dp</item>
         <item name="day_time_picker_center_text_style">normal</item>
-        <item name="day_time_picker_day_column_width">150dp</item>
+        <item name="day_time_picker_day_column_width">170dp</item>
         <item name="day_time_picker_line_height">27dp</item>
         <item name="day_time_picker_secondary_text_size">14dp</item>
         <item name="day_time_picker_secondary_text_style">normal</item>
