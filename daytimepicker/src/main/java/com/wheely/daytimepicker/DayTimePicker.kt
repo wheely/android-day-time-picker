@@ -52,6 +52,7 @@ class DayTimePicker constructor(context: Context, attrs: AttributeSet?, defStyle
         }
 
     private var startTime: LocalDateTime = LocalDateTime.MIN
+    private var finishTime: LocalDateTime = LocalDateTime.MAX
 
     private val dayColumn: ScrollSelector
     private val hourColumn: ScrollSelector
@@ -75,6 +76,10 @@ class DayTimePicker constructor(context: Context, attrs: AttributeSet?, defStyle
                 if (selectedTime.isBefore(startTime) && !isPressed) {
                     setTime(startTime)
                     selectedTime = startTime
+                }
+                if (selectedTime.isAfter(finishTime) && !isPressed) {
+                    setTime(finishTime)
+                    selectedTime = finishTime
                 }
                 onUserSelected?.invoke(selectedTime)
             }
@@ -185,19 +190,24 @@ class DayTimePicker constructor(context: Context, attrs: AttributeSet?, defStyle
     /**
      * @param startTime from this time we can choose not earlier
      * @param currentTime time chosen by default
-     * @param dayCountDuration determines number of days user can choose
+     * @param duration determines slot duration
      * @param dayStringBuilder function that builds a day title string from a LocalDate
      */
     fun setDateTimeParams(
         startTime: LocalDateTime,
         currentTime: LocalDateTime,
-        dayCountDuration: Duration,
+        duration: Duration,
         dayStringBuilder: (LocalDate) -> String
     ) {
         this.startDay = startTime.toLocalDate()
         this.startTime = startTime
-        val dayCount = dayCountDuration.toDays().toInt()
-        val values = (0 until dayCount).map { dayStringBuilder(startDay.plusDays(it.toLong())) }
+        finishTime = startTime + duration
+        val finishDay = finishTime.toLocalDate()
+
+
+        val dayCount =
+            Duration.between(startDay.atStartOfDay(), finishDay.atStartOfDay()).toDays().toInt()
+        val values = (0..dayCount).map { dayStringBuilder(startDay.plusDays(it.toLong())) }
         dayColumn.values = values
         setTime(currentTime)
     }

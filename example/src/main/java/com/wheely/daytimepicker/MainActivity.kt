@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         dayTimePicker24.setDateTimeParams(
             startTime,
             currentTime,
-            Duration.ofDays(3)
+            Duration.ofDays(3).minusMinutes(1)
         ) { dayFormatter.format(it) }
         dayTimePicker24.onUserSelected = {
             dayTimePicker24ResultView.text = it.toString()
