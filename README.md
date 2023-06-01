@@ -11,7 +11,7 @@ Add repository:
 Add the dependency
 ```groovy
     dependencies {
-        implementation 'com.github.wheely:android-day-time-picker:1.0.2'
+        implementation 'com.github.wheely:android-day-time-picker:1.0.3'
     }
 ```
 Sample usage
